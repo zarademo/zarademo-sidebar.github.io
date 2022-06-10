@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+  <head>
+      <title>Test Menu</title>
+     <style>
+         .body {
+             margin: 10px;
+         }
+         .sidebar {
+            height: 100%; /* Full-height: remove this if you want "auto" height */
+            width: 120px; /* Set the width of the sidebar */
+            position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+            top: 0; /* Stay at the top */
+            left: 0;
+            background-color: lightblue; /* Lightblue */
+            overflow-x: visible; 
+            padding-top: 20px;
+            transition: 0.5s;
+         }
+
+         .sidebar-item {
+             display: block;
+             padding: 10px 30px 10px 30px;
+             text-align: center;
+             position: relative;
+             
+         }
+         .sidebar-item:hover {
+             background-color: lightcoral;
+             
+         }
+         .sidenav {
+             display: none;
+             background-color: lightcoral;
+             
+         }
+         .sidebar-item:hover .sidenav {
+             display: block;
+             right: 10px;
+             text-align: center;
+             background-color: lightcoral;
+            
+         }
+         
+         .sidenav-item {
+             padding: 10px 100px 10px 100px;
+             white-space: nowrap;
+             background-color: lightcoral;
+             overflow-x: hidden;
+         }
+
+         .sidenav-item:hover {
+            background-color: lightcoral;
+            right: 1px;
+            display: none;
+        
+         }
+
+         .sidenav-item a {
+             color: black;
+             text-decoration: none;
+         }
+         
+
+            
+     </style> 
+    </head>
+    <body>
+      <div class="sidebar">
+       
+          <div class="sidebar-item">Menu 1
+              <div class="sidenav"> 
+                  <div class="sidenav-item">Dropdown-item</div>
+                  <div class="sidenav-item">Dropdown-item</div>
+                  <div class="sidenav-item"><a href="http://google.com">Google.com</a></div>
+              </div>
+          </div>
+          <div class="sidebar-item">Menu 2
+            <div class="sidenav">
+                <div class="sidenav-item">Dropdown-item</div>
+                <div class="sidenav-item">Dropdown-item</div>
+                <div class="sidenav-item">Dropdown-item</div>
+            </div>
+          </div>
+          <div class="sidebar-item">Menu 3
+            <div class="sidenav">
+                <div class="sidenav-item">Dropdown-item</div>
+                <div class="sidenav-item">Dropdown-item</div>
+                <div class="sidenav-item">Dropdown-item</div>
+            </div>
+          </div>
+
+      </div>
+    
+    </body>
+    </html>
